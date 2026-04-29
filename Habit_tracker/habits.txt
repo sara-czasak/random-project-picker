@@ -1,2 +1,2 @@
-Water
-Trash
+Drink liquid
+Name
