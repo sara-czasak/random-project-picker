@@ -20,6 +20,6 @@ def save_habits(all_habits):
 def update_habit_name(all_habits, raw_habit):
     habit_new_name = input('Please enter new habit name: ').capitalize()
     all_habits.remove(raw_habit)
-    all_habits.append(habit_new_name)
+    all_habits.append(f'{raw_habit.split('.')[0]}.{habit_new_name}')
     print('Habit name updated!')
     return all_habits, habit_new_name
